@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+
+      button {
+        margin-left: 5px;
+      }
+      .leaders {
+        /*display: flex;*/
+        width: 300px;
+        height: 800px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        margin-left: 10px;
+      }
+      .leaders h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 0;
+      }
+      .leaders div {
+        margin-left: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div style="display: flex">
+      <canvas id="canvas" width="800" height="800"></canvas>
+      <div>
+        <div id="info" class="leaders"></div>
+      </div>
+    </div>
+    <script type="module">
+      import { main } from './main.js';
+      main();
+    </script>
+  </body>
+</html>
