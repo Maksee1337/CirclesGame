@@ -83,7 +83,7 @@ export class Game {
     this.onChangeLeaderboardCallback = callback;
   }
 
-  private getPlayerByClient(client: any) {
+  public getPlayerByClient(client: any) {
     return this.players.find((player) => player.client === client);
   }
 

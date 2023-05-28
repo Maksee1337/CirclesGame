@@ -14,3 +14,11 @@ export class NewPlayer {
     return { type: this.type, data: { name: this.name } };
   }
 }
+
+export class ChatMessage {
+  constructor(text) {
+    this.type = 'chatMessage';
+    this.text = text;
+    return { type: this.type, data: { text: this.text } };
+  }
+}
